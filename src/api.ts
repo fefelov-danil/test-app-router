@@ -5,7 +5,7 @@ const instance = axios.create({
 })
 
 export const rickAndMortyApi = {
-  getEpisodes() {
+  getCharacters() {
     return instance.get<ICharacter>('character')
   }
 }
