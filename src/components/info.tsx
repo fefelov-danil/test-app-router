@@ -5,6 +5,8 @@ import {Component2} from "@/components/component2";
 import {Component3} from "@/components/component3";
 import {Component4} from "@/components/component4";
 import {Component5} from "@/components/component5";
+import {Button} from "@/components/button/Button";
+import Feedback from "@/components/feedback/Feedback";
 
 interface Props {
   characters: ICharacter
@@ -24,6 +26,8 @@ export const Info = ({characters}: Props) => {
       <Component3 />
       <Component4 />
       <Component5 />
+      <Button>Test</Button>
+      <Feedback title="Title" info="text" />
     </>
   )
 }
