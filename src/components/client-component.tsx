@@ -10,9 +10,11 @@ export const ClientComponent = () => {
   }
 
   return (
-    <div className="m-5">
-      <p>Клиентская компонента</p>
-      <input className="bg-slate-500" type="text" onChange={handleChange} value={value}/>
+    <div className="m-10">
+      <p className="text-center">Клиентская компонента</p>
+      <p className="text-center">
+        <input className="bg-slate-500" type="text" onChange={handleChange} value={value}/>
+      </p>
     </div>
   )
 }
