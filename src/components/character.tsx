@@ -1,4 +1,5 @@
 import {ICharacter} from "@/api";
+import Image from 'next/image'
 
 interface Props {
   character: ICharacter
@@ -9,7 +10,12 @@ export const Character = ({character}: Props) => {
     <div>
       <p>{character.name}</p>
       <p>{character.created}</p>
-      <img src={character.image} alt=""/>
+      <Image
+        src={character.image}
+        alt={character.name}
+        width={300}
+        height={300}
+      />
     </div>
   )
 }
