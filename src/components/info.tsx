@@ -1,6 +1,6 @@
 import {ICharacter} from "@/api";
-import Image from 'next/image'
 import {Character} from "@/components/character";
+import Image from 'next/image'
 import Badge from "@mui/material/Badge";
 import MailIcon from '@mui/icons-material/Mail';
 import List from "@mui/material/List";
